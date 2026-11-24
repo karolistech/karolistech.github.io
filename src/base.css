@@ -1,5 +1,15 @@
+@font-face {
+  font-family: SegoeUI;
+  src: url("./assets/fonts/SegoeUI.woff2") format("woff2");
+  font-weight: 300 700;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: SegoeUI, system-ui;
 }
