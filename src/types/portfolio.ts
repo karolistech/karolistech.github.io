@@ -8,3 +8,8 @@ export type Profile = {
     icon: string;
   }[];
 };
+
+export type Technology = {
+  name: string;
+  icon: string;
+};

@@ -1,4 +1,4 @@
-import { profile } from "@/data/portfolio";
+import { profile, technologies } from "@/data/portfolio";
 
 import "./App.css";
 import icons from "@/assets/icons/icons.svg";
@@ -23,6 +23,24 @@ export default function App() {
           ))}
         </nav>
       </header>
+
+      <main className="main">
+        <section className="section">
+          <h2 className="section__title">Technologies</h2>
+
+          <ul className="technologies">
+            {technologies.map(technology => (
+              <li key={technology.name} className="technology">
+                <svg className="technology__icon">
+                  <use href={`${icons}#${technology.icon}`} />
+                </svg>
+
+                <span className="technology__name">{technology.name}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </main>
     </div>
   );
 }

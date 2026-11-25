@@ -6,8 +6,11 @@
 
 :root {
   --color-background: #f7f6f5;
+  --color-surface: #f6f8fa;
+  --color-border: #ccc;
   --color-shadow: 0 0 8px rgb(0 0 0 / 10%);
   --color-title: #444;
+  --color-text: #222;
 }
 
 *, *::before, *::after {
@@ -24,4 +27,8 @@ body {
 a {
   color: inherit;
   -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  list-style-type: none;
 }
