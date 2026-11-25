@@ -4,6 +4,12 @@
   font-weight: 300 700;
 }
 
+:root {
+  --color-background: #f7f6f5;
+  --color-shadow: 0 0 8px rgb(0 0 0 / 10%);
+  --color-title: #444;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -11,5 +17,11 @@
 }
 
 body {
+  background-color: var(--color-background);
   font-family: SegoeUI, system-ui;
+}
+
+a {
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
 }
