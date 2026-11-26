@@ -1,4 +1,4 @@
-import type { Profile, Project, Technology } from "@/types/portfolio";
+import type { Experiment, Profile, Project, Technology } from "@/types/portfolio";
 
 const images = import.meta.glob<string>("@/assets/images/*.webp", {
   import: "default",
@@ -70,5 +70,13 @@ export const projects: Project[] = [
     image: getImage("pixel-paint"),
     github: "https://github.com/karolistech/pixel-paint",
     demo: "https://karolistech.github.io/pixel-paint/"
+  }
+];
+
+export const experiments: Experiment[] = [
+  {
+    name: "Calculator",
+    description: "A basic arithmetic calculator",
+    demo: "https://karolistech.github.io/calculator/"
   }
 ];

@@ -21,3 +21,9 @@ export type Project = {
   github: string;
   demo: string;
 };
+
+export type Experiment = {
+  name: string;
+  description: string;
+  demo: string;
+};

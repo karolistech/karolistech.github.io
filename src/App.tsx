@@ -1,4 +1,4 @@
-import { profile, projects, technologies } from "@/data/portfolio";
+import { experiments, profile, projects, technologies } from "@/data/portfolio";
 
 import "./App.css";
 import icons from "@/assets/icons/icons.svg";
@@ -70,6 +70,22 @@ export default function App() {
 
                   <p className="project__description">{project.description}</p>
                 </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="section">
+          <h2 className="section__title">Other Experiments</h2>
+
+          <ul className="experiments">
+            {experiments.map(experiment => (
+              <li key={experiment.name} className="experiment">
+                <a href={experiment.demo} className="experiment__link" target="_blank">
+                  {experiment.name}
+                </a>
+
+                <p className="experiment__description">{experiment.description}</p>
               </li>
             ))}
           </ul>

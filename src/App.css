@@ -141,6 +141,26 @@
   height: 100%;
 }
 
+.experiments {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.experiment__link {
+  float: left;
+  text-underline-offset: 4px;
+}
+
+.experiment__description {
+  color: var(--color-text);
+}
+
+.experiment__description::before {
+  content: "—";
+  margin-inline: 0.25rem;
+}
+
 @media (min-width: 768px) {
   .technologies {
     grid-template-columns: repeat(auto-fit, 90px);
@@ -153,5 +173,11 @@
 
   .technology__name {
     font-size: 0.875rem;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .experiment__link:hover {
+    color: var(--color-hover);
   }
 }
