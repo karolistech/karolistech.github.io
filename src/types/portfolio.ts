@@ -13,3 +13,11 @@ export type Technology = {
   name: string;
   icon: string;
 };
+
+export type Project = {
+  name: string;
+  description: string;
+  image: string;
+  github: string;
+  demo: string;
+};
